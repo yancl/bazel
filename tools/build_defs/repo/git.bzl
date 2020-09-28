@@ -207,4 +207,6 @@ commit actually checked out and its date, and return a dict with parameters
 that provide a reproducible version of this rule (which a tag not necessarily
 is).
 """,
+    # Fetch the repository everytime env BAZEL_RUNID changes.
+    environ = ["BAZEL_RUNID"],
 )
